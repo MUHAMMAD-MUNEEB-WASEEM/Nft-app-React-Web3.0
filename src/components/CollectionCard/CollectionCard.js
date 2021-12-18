@@ -1,7 +1,7 @@
 import './CollectionCard.css'
 import weth from '../../assets/weth.png'
 
-function CollectionCard({id, name, traits, image}) {
+function CollectionCard({id, name, traits, image, price}) {
     return (
         <div className='collectionCard'>
             
@@ -15,7 +15,7 @@ function CollectionCard({id, name, traits, image}) {
 
                 <div className='priceContainer'>
                     <img src={weth} className='wethImage' alt=''/>
-                    <div className='price'>{traits[0]?.value}</div>
+                    <div className='price'>{price ? price : traits[0]?.value}</div>
                 </div>
 
             </div>
