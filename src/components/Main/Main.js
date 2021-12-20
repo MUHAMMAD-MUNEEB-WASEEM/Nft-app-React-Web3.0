@@ -24,7 +24,7 @@ function Main({ selectedPunk, punkListData}) {
                         />
                     </div>
                 </div>
-                <div class='punkDetails' style={{ color: '#fff' }}>
+                <div className='punkDetails' style={{ color: '#fff' }}>
                     <div className='title'> {activePunk.name}
                         {/* <span className='itemNumber'>.#{activePunk.token_id}</span> */}
                     </div>
